@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block lists %}
+<h4>Programmers:</h4>
+    <ul>
+        {% for pro in programmers %}
+            <li><strong>Name: </strong>{{ pro.name }}, <strong>Age: </strong>{{ pro.age }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
+{% block juniors %}
+<h4>Junior Programmers</h4>
+    <ul>
+        {% for jun in juniors %}
+            <li><strong>Name: </strong>{{ jun.name }}, <strong>Age: </strong>{{ jun.age }}, <strong>Experience: </strong>{{ jun.experience }} years</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
